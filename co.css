@@ -1,19 +1,22 @@
-@import url("https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display:wght@400;700&display=swap");
 
 .bg-container {
     background-color: #f1f5f8;
     height: 100vh;
+    transition: all 0.3s ease-in-out;
 }
 
 .counter-heading {
     font-family: "Roboto";
     font-size: 50px;
     font-weight: 800;
+    transition: font-size 0.3s ease-in-out;
 }
 
 .counter-value {
     font-size: 75px;
     font-weight: 900;
+    transition: font-size 0.3s ease-in-out;
 }
 
 .button {
@@ -23,4 +26,18 @@
     border-radius: 7px;
     margin: 8px;
     padding: 5px;
+    transition: all 0.3s ease-in-out;
+}
+
+@media (max-width: 768px) {
+    .counter-heading {
+        font-size: 30px;
+    }
+    .counter-value {
+        font-size: 50px;
+    }
+    .button {
+        padding: 10px;
+        margin: 5px;
+    }
 }
