@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+...');
 
 .navb {
     background: linear-gradient(to right, #E0EAFC, #CFDEF3);
@@ -9,23 +9,7 @@
     height: 70px;
 }
 
-
-#navItem1 {
-    color: #183b56;
-    font-family: "Roboto";
-}
-
-#navItem2 {
-    color: #183b56;
-    font-family: "Roboto";
-}
-
-#navItem3 {
-    color: #183b56;
-    font-family: "Roboto";
-}
-
-#navItem4 {
+#navItem1, #navItem2, #navItem3, #navItem4 {
     color: #183b56;
     font-family: "Roboto";
 }
@@ -38,31 +22,30 @@
     
     .banner-caption {
         font-size: 15px;
-        margin-bottom: 12px;  /* Adjusts spacing for better readability */
+        margin-bottom: 12px;
     }
     
     .btn {
         font-size: 14px;
         padding: 8px 12px;
-        border-radius: 6px;  /* Slight rounding for better mobile aesthetics */
+        border-radius: 6px;
     }
 
     .banner-section-bg-container {
         background-size: cover;
         background-position: center;
-        min-height: 75vh;  /* Adjusts height for mobile screens */
-        padding: 30px 10px; /* Adds padding to avoid content sticking to edges */
+        min-height: 75vh;
+        padding: 30px 10px;
     }
 
     .text-center.p-5 {
-        padding: 10px; /* Reduces padding on mobile to fit content well */
+        padding: 10px;
     }
 }
 
-
-.no-break{
+.no-break {
     white-space: nowrap;
-    word-break:keep-all;
+    word-break: keep-all;
 }
 
 .banner-section-bg-container {
@@ -70,7 +53,6 @@
     height: 100vh;
     background-size: cover;
 }
-
 
 .banner-heading {
     font-size: 3em;
@@ -80,24 +62,23 @@
     color: #5A3E85;
     font-family: "Roboto";
 }
+
 @keyframes slideIn {
     from {
         opacity: 0;
         transform: translateY(30px);
     }
-
     to {
         opacity: 1;
         transform: translateY(0);
     }
 }
 
-
 .banner-caption {
     color: #5A3E85;
     font-family: "Roboto";
     font-size: 23px;
-    font-size:clamp(2opx,5vw,40px);
+    font-size: clamp(20px, 5vw, 40px);
     font-weight: bold;
     margin: 10px 0;
     overflow: hidden;
@@ -112,7 +93,6 @@
 
 .animated-text span.space {
     width: 10px;
-    /* Space width */
     display: inline-block;
 }
 
@@ -123,9 +103,7 @@
 
 .btn {
     background: linear-gradient(to right, #DCC6E0, #C3A2E0);
-    /* Light Soft Purple */
     color: #5A3E85;
-    /* Deep Purple Text for contrast */
     padding: 12px 24px;
     border: none;
     border-radius: 8px;
@@ -139,17 +117,11 @@
     margin-right: 15px;
 }
 
-/* Hover Effect */
 .btn:hover {
     background: linear-gradient(to right, #C3A2E0, #A680C3);
-    /* Slightly darker */
     transform: translateY(-2px);
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
 }
-
-
-
-
 
 .explore-menu-section {
     background-color: #B0B9E6;
@@ -161,10 +133,6 @@
     font-size: 28px;
     font-weight: 700;
 }
-
-/*.menu-item-image {
-    border-radius: 16px;
-}*/
 
 .menu-card-title {
     color: #5A3E85;
@@ -187,7 +155,6 @@
     padding: 20px;
     box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
-
 }
 
 .menu-item-card:hover {
@@ -227,27 +194,6 @@
     transform: translateY(-5px);
     box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.2);
 }
-
-
-.wcu-card-image
-/*
-    width: 500px;
-    height: 300px;
-*/
-
-.wcu-card-title {
-    color: #5A3E85;
-    font-family: "Roboto";
-    font-size: 25px;
-    font-weight: 500;
-}
-
-.wcu-card-description {
-    color: #5A3E85;
-    font-family: "Roboto";
-    font-size: 16px;
-}
-
 
 .footer-section {
     background: linear-gradient(to right, #E0EAFC, #CFDEF3);
