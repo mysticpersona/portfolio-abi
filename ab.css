@@ -1,66 +1,54 @@
-@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+...');
+/* Import Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
+/* Global Styles */
+body {
+    font-family: "Roboto", sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+}
+
+/* Navbar */
 .navb {
-    background: linear-gradient(to right, #E0EAFC, #CFDEF3);
+    background: #f9f9f9;
+    padding: 10px 0;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
 }
 
 .food-munch-logo {
-    width: 80px;
-    height: 70px;
+    width: 70px;
+    height: auto;
 }
 
-#navItem1, #navItem2, #navItem3, #navItem4 {
+.nav-item {
     color: #183b56;
-    font-family: "Roboto";
+    font-size: 16px;
+    font-weight: 500;
+    transition: color 0.3s ease-in-out;
 }
 
-@media (max-width: 767px) {
-    .banner-heading {
-        font-size: 20px;
-        line-height: 1.2;
-    }
-    
-    .banner-caption {
-        font-size: 15px;
-        margin-bottom: 12px;
-    }
-    
-    .btn {
-        font-size: 14px;
-        padding: 8px 12px;
-        border-radius: 6px;
-    }
-
-    .banner-section-bg-container {
-        background-size: cover;
-        background-position: center;
-        min-height: 75vh;
-        padding: 30px 10px;
-    }
-
-    .text-center.p-5 {
-        padding: 10px;
-    }
+.nav-item:hover {
+    color: #5A3E85;
 }
 
-.no-break {
-    white-space: nowrap;
-    word-break: keep-all;
-}
-
+/* Banner Section */
 .banner-section-bg-container {
-    background-color: #B0B9E6;
-    height: 100vh;
-    background-size: cover;
+    background-color: #f9f9f9;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
 }
 
 .banner-heading {
-    font-size: 3em;
-    font-size:clamp(24px,5vw,48px);
-    text-align: center;
-    animation: slideIn 4s ease-in-out;
-    color: #5A3E85;
-    font-family: "Roboto";
+    font-size: 2.2em;
+    color: black;
+    font-weight: bold;
+    animation: slideIn 3s ease-in-out;
 }
 
 @keyframes slideIn {
@@ -68,31 +56,32 @@
         opacity: 0;
         transform: translateY(30px);
     }
+
     to {
         opacity: 1;
         transform: translateY(0);
     }
 }
 
+/* Animated Text Effect */
 .banner-caption {
-    color: #5A3E85;
-    font-family: "Roboto";
-    font-size: 23px;
-    font-size: clamp(20px, 5vw, 40px);
-    font-weight: bold;
-    margin: 10px 0;
+    color: black;
+    font-size: 14px;
+    margin: 12px 0;
     overflow: hidden;
+    letter-spacing: 0.5px;
+    line-height: 1.4;
 }
 
 .animated-text span {
     opacity: 0;
     display: inline-block;
-    transform: translateY(10px);
-    transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+    transform: translateY(15px);
+    transition: opacity 0.4s ease-in-out, transform 0.4s ease-in-out;
 }
 
 .animated-text span.space {
-    width: 10px;
+    width: 12px;
     display: inline-block;
 }
 
@@ -101,9 +90,10 @@
     transform: translateY(0);
 }
 
+/* Buttons */
 .btn {
-    background: linear-gradient(to right, #DCC6E0, #C3A2E0);
-    color: #5A3E85;
+    background-color: white;
+    color: black;
     padding: 12px 24px;
     border: none;
     border-radius: 8px;
@@ -118,39 +108,38 @@
 }
 
 .btn:hover {
-    background: linear-gradient(to right, #C3A2E0, #A680C3);
+    background-color: lightgrey;
     transform: translateY(-2px);
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
 }
 
+button a {
+    color: inherit;
+    /* Keeps the font color same as the button */
+    text-decoration: none;
+    /* Removes underline */
+}
+
+button a:visited {
+    color: red;
+    /* Change this to any color you want */
+}
+
+/* Explore Menu Section */
 .explore-menu-section {
-    background-color: #B0B9E6;
+    background-color: #f9f9f9;
+    padding: 50px 20px;
 }
 
 .menu-section-heading {
-    color: #5A3E85;
-    font-family: "Roboto";
+    color: black;
     font-size: 28px;
     font-weight: 700;
 }
 
-.menu-card-title {
-    color: #5A3E85;
-    font-family: "Roboto";
-    font-size: 28px;
-    font-weight: 500;
-    margin-top: 24px;
-}
-
-.menu-item-link {
-    color: #5A3E85;
-    font-family: "Roboto";
-    font-size: 14px;
-    font-weight: 500;
-}
-
+/* Menu Cards */
 .menu-item-card {
-    background: linear-gradient(to right, #E0EAFC, #CFDEF3);
+    background: white;
     border-radius: 16px;
     padding: 20px;
     box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
@@ -162,53 +151,137 @@
     box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.2);
 }
 
-.wcu-section {
-    background-color: #B0B9E6;
-}
-
-.wcu-section-heading {
-    color: #5A3E85;
-    font-family: "Roboto";
-    font-size: 28px;
-    font-weight: 700;
+.menu-card-title {
+    font-size: 22px;
+    color: black;
+    font-weight: 500;
+    margin-top: 24px;
 }
 
 .wcu-section-description {
-    color: #5A3E85;
-    font-family: "Roboto";
-    font-size: 16px;
+    color: black;
+    font-size: 25px;
+}
+
+.menu-item-link {
+    color: black;
+    font-size: 14px;
+    font-weight: 500;
+    display: flex;
+    gap: 5px;
+    transition: color 0.3s ease-in-out;
+}
+
+.menu-item-link:hover {
+    color: #3a2565;
+}
+
+/* Slider Section */
+.slider-container {
+    position: relative;
+    overflow: hidden;
+    max-width: 900px;
+    margin: auto;
+}
+
+.scroll-wrapper {
+    display: flex;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    scrollbar-width: none;
+}
+
+.scroll-wrapper::-webkit-scrollbar {
+    display: none;
+}
+
+.slider {
+    display: flex;
+    gap: 20px;
+    padding: 10px;
+}
+
+
+.wcu-section-description {
+    text-align: center;
+
 }
 
 .wcu-card {
-    background: linear-gradient(to right, #E0EAFC, #CFDEF3);
-    border-style: solid;
-    border-width: 1px;
-    border-color: #e5eaf4;
-    border-radius: 16px;
-    color: #5A3E85;
-    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+    flex: 0 0 300px;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 }
 
 .wcu-card:hover {
     transform: translateY(-5px);
-    box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
 }
 
+/* Scroll Buttons */
+.scroll-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: grey;
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 18px;
+    border-radius: 50%;
+    transition: background 0.3s ease-in-out;
+}
+
+.scroll-btn:hover {
+    background: darkgrey;
+}
+
+.left-btn {
+    left: 10px;
+}
+
+.right-btn {
+    right: 10px;
+}
+
+/* Footer */
 .footer-section {
-    background: linear-gradient(to right, #E0EAFC, #CFDEF3);
+    background-color: white;
+    padding: 30px;
+    text-align: center;
 }
 
 .footer-section-mail-id {
-    color: #5A3E85;
-    font-family: "Roboto";
+    color: black;
     font-weight: bold;
     font-size: 16px;
-    margin-top: 20px;
 }
 
 .footer-section-address {
-    color: #5A3E85;
-    font-family: "Roboto";
+    color: black;
     font-size: 14px;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .banner-heading {
+        font-size: 1.8em;
+    }
+
+    .menu-card-title {
+        font-size: 18px;
+    }
+
+    .wcu-card {
+        flex: 0 0 250px;
+    }
+
+    .scroll-btn {
+        font-size: 14px;
+        padding: 8px;
+    }
 }
