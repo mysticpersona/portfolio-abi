@@ -55,19 +55,3 @@ document.addEventListener("DOMContentLoaded", function() {
         });
     });
 });
-
-function scrollToLeft() {
-    const scrollWrapper = document.querySelector('.scroll-wrapper');
-    scrollWrapper.scrollBy({
-        left: -300, // Adjust scroll amount as needed
-        behavior: 'smooth'
-    });
-}
-
-function scrollToRight() {
-    const scrollWrapper = document.querySelector('.scroll-wrapper');
-    scrollWrapper.scrollBy({
-        left: 300, // Adjust scroll amount as needed
-        behavior: 'smooth'
-    });
-}
