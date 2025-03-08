@@ -157,7 +157,9 @@ button a:visited {
     font-weight: 500;
     margin-top: 24px;
 }
-
+.wcu-card {
+    padding: 20px;
+}
 .wcu-section-description {
     color: black;
     font-size: 25px;
