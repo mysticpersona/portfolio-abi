@@ -17,3 +17,41 @@ document.addEventListener("DOMContentLoaded", function() {
         });
     });
 });
+
+
+
+
+
+const slider = document.querySelector('.slider');
+
+function scrollToLeft() {
+    slider.scrollBy({
+        left: -320,
+        behavior: 'smooth'
+    });
+}
+
+function scrollToRight() {
+    slider.scrollBy({
+        left: 320,
+        behavior: 'smooth'
+    });
+}
+document.addEventListener("DOMContentLoaded", function() {
+    const scrollWrapper = document.querySelector(".scroll-wrapper");
+    const scrollAmount = 320; // Adjust based on card width + gap
+
+    document.querySelector(".left-btn").addEventListener("click", function() {
+        scrollWrapper.scrollBy({
+            left: -scrollAmount,
+            behavior: "smooth"
+        });
+    });
+
+    document.querySelector(".right-btn").addEventListener("click", function() {
+        scrollWrapper.scrollBy({
+            left: scrollAmount,
+            behavior: "smooth"
+        });
+    });
+});
