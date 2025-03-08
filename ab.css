@@ -2,13 +2,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
 /* Global Styles */
+/* Global Styles */
 body {
     font-family: "Roboto", sans-serif;
     margin: 0;
-    padding: 0;
+    padding: 20px; /* Set uniform padding */
     background-color: #f9f9f9;
 }
 
+/* Adjust padding for specific sections if necessary */
+.navb, .banner-section-bg-container, .explore-menu-section, .wcu-card, .footer-section {
+    padding-left: 20px;   /* Ensure equal left padding */
+    padding-right: 20px;  /* Ensure equal right padding */
+}
 /* Navbar */
 .navb {
     background: #f9f9f9;
@@ -157,12 +163,14 @@ button a:visited {
     font-weight: 500;
     margin-top: 24px;
 }
+/* Adjust padding for Recognition and Certification section */
 .wcu-card {
-    padding: 20px;
+    padding: 30px; /* Increase padding */
 }
+
 .wcu-section-description {
-    color: black;
-    font-size: 25px;
+    padding-left: 30px;
+    padding-right: 30px;
 }
 
 .menu-item-link {
