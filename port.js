@@ -19,18 +19,18 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 
 
+const slider = document.querySelector('.slider');
+
 function scrollToLeft() {
-    const slider = document.querySelector('.slider');
     slider.scrollBy({
-        left: -200,
+        left: -320,
         behavior: 'smooth'
     });
 }
 
 function scrollToRight() {
-    const slider = document.querySelector('.slider');
     slider.scrollBy({
-        left: 200,
+        left: 320,
         behavior: 'smooth'
     });
 }
