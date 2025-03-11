@@ -19,25 +19,18 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 
 
-function scrollToLeft() {
-    const scrollWrapper = document.querySelector(".scroll-wrapper");
-    const scrollAmount = 320; // Adjust this value based on how much you want to scroll each time
+const slider = document.querySelector('.slider');
 
-    // Scroll left by the specified amount
-    scrollWrapper.scrollBy({
-        left: -scrollAmount,
+function scrollToLeft() {
+    slider.scrollBy({
+        left: -320,
         behavior: 'smooth'
     });
 }
 
 function scrollToRight() {
-    const scrollWrapper = document.querySelector(".scroll-wrapper");
-    const scrollAmount = 320; // Adjust this value based on how much you want to scroll each time
-
-    // Scroll right by the specified amount
-    scrollWrapper.scrollBy({
-        left: scrollAmount,
+    slider.scrollBy({
+        left: 320,
         behavior: 'smooth'
     });
 }
-
