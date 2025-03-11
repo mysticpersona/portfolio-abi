@@ -19,18 +19,25 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 
 
-const slider = document.querySelector('.slider');
-
 function scrollToLeft() {
-    slider.scrollBy({
-        left: -320,
+    const scrollWrapper = document.querySelector(".scroll-wrapper");
+    const scrollAmount = 320; // Adjust this value based on how much you want to scroll each time
+
+    // Scroll left by the specified amount
+    scrollWrapper.scrollBy({
+        left: -scrollAmount,
         behavior: 'smooth'
     });
 }
 
 function scrollToRight() {
-    slider.scrollBy({
-        left: 320,
+    const scrollWrapper = document.querySelector(".scroll-wrapper");
+    const scrollAmount = 320; // Adjust this value based on how much you want to scroll each time
+
+    // Scroll right by the specified amount
+    scrollWrapper.scrollBy({
+        left: scrollAmount,
         behavior: 'smooth'
     });
 }
+
