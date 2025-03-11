@@ -306,7 +306,17 @@ button a:visited {
 .right-btn {
     right: 10px;
 }
+* Responsive behavior for mobile and tablet */
+@media (max-width: 768px) {
+    .wcu-card {
+        width: 200px;
+    }
+}
 
+@media (max-width: 480px) {
+    .wcu-card {
+        width: 150px;
+    }
 /* Footer */
 .footer-section {
     background-color: white;
