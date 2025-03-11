@@ -19,21 +19,18 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 
 
-document.addEventListener("DOMContentLoaded", function() {
-    const scrollWrapper = document.querySelector(".scroll-wrapper");
-    const scrollAmount = 320; // Adjust based on card width + gap
-
-    document.querySelector(".left-btn").addEventListener("click", function() {
-        scrollWrapper.scrollBy({
-            left: -scrollAmount,
-            behavior: "smooth"
-        });
+function scrollToLeft() {
+    const slider = document.querySelector('.slider');
+    slider.scrollBy({
+        left: -200,
+        behavior: 'smooth'
     });
+}
 
-    document.querySelector(".right-btn").addEventListener("click", function() {
-        scrollWrapper.scrollBy({
-            left: scrollAmount,
-            behavior: "smooth"
-        });
+function scrollToRight() {
+    const slider = document.querySelector('.slider');
+    slider.scrollBy({
+        left: 200,
+        behavior: 'smooth'
     });
-});
+}
