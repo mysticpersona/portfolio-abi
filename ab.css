@@ -5,14 +5,13 @@
 body {
     font-family: "Roboto", sans-serif;
     margin: 0;
-    padding: 20px; /* Set uniform padding */
+    padding: 20px;
     background-color: #f9f9f9;
 }
 
-/* Adjust padding for specific sections if necessary */
 .navb, .banner-section-bg-container, .explore-menu-section, .wcu-card, .footer-section {
-    padding-left: 20px;   /* Ensure equal left padding */
-    padding-right: 20px;  /* Ensure equal right padding */
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
 /* Navbar */
@@ -161,7 +160,7 @@ button a:visited {
     margin-top: 24px;
 }
 
-/* Adjust padding for Recognition and Certification section */
+/* Recognition and Certification section */
 .wcu-card {
     padding: 30px;
 }
@@ -231,7 +230,7 @@ button a:visited {
     display: flex;
     align-items: center;
     position: relative;
-    width: 80%;
+    width: 100%;
 }
 
 .scroll-wrapper {
@@ -323,34 +322,19 @@ button a:visited {
 
 /* Responsive Design */
 @media screen and (max-width: 768px) {
+    body {
+        padding: 10px;
+    }
+
+    /* Banner */
     .banner-heading {
         font-size: 1.8em;
+        margin-bottom: 20px;
     }
 
-    .menu-card-title {
-        font-size: 18px;
-    }
-
-    .wcu-card {
-        flex: 0 0 250px;
-    }
-
-    .scroll-btn {
-        font-size: 14px;
-        padding: 8px;
-    }
-
-    .menu-item-card {
-        padding: 15px;
-    }
-
-    .slider-container {
-        width: 100%; /* Make slider container full width */
-    }
-
-    .slide {
-        flex: 0 0 80%; /* Make each slide take more space on smaller screens */
-        font-size: 18px; /* Adjust font size */
+    .banner-caption {
+        font-size: 12px;
+        margin: 10px 0;
     }
 
     .btn {
@@ -358,24 +342,78 @@ button a:visited {
         font-size: 14px;
     }
 
-    .explore-menu-section {
-        padding: 30px 15px;
-    }
-
-    .footer-section {
-        padding: 20px;
-    }
-
-    .wcu-section-description {
-        padding-left: 20px;
-        padding-right: 20px;
-    }
-
+    /* Navbar */
     .nav-item {
         font-size: 14px;
     }
 
     .food-munch-logo {
-        width: 50px; /* Adjust logo size for small screens */
+        width: 50px;
+    }
+
+    /* Explore Menu Section */
+    .menu-section-heading {
+        font-size: 22px;
+    }
+
+    .menu-item-card {
+        padding: 15px;
+    }
+
+    /* Slider Section */
+    .slider-container {
+        width: 100%;
+    }
+
+    .slide {
+        flex: 0 0 80%; /* Stacking cards for small screens */
+        font-size: 16px;
+    }
+
+    /* WCU Section */
+    .wcu-card {
+        flex: 0 0 100%;
+        margin-bottom: 15px;
+    }
+
+    /* Footer Section */
+    .footer-section {
+        padding: 20px;
+    }
+
+    .footer-section-mail-id,
+    .footer-section-address {
+        font-size: 14px;
+    }
+
+    /* Reduce the menu padding */
+    .explore-menu-section {
+        padding: 40px 15px;
+    }
+
+    /* Adjust slider padding */
+    .slider {
+        padding: 5px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .banner-heading {
+        font-size: 1.5em;
+    }
+
+    .menu-item-card {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .slider-container {
+        width: 100%;
+        padding: 0 10px;
+    }
+
+    .slide {
+        flex: 0 0 90%;
+        font-size: 14px;
     }
 }
