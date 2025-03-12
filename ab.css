@@ -2,7 +2,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
 /* Global Styles */
-/* Global Styles */
 body {
     font-family: "Roboto", sans-serif;
     margin: 0;
@@ -15,6 +14,7 @@ body {
     padding-left: 20px;   /* Ensure equal left padding */
     padding-right: 20px;  /* Ensure equal right padding */
 }
+
 /* Navbar */
 .navb {
     background: #f9f9f9;
@@ -121,14 +121,11 @@ body {
 
 button a {
     color: inherit;
-    /* Keeps the font color same as the button */
     text-decoration: none;
-    /* Removes underline */
 }
 
 button a:visited {
     color: red;
-    /* Change this to any color you want */
 }
 
 /* Explore Menu Section */
@@ -163,9 +160,10 @@ button a:visited {
     font-weight: 500;
     margin-top: 24px;
 }
+
 /* Adjust padding for Recognition and Certification section */
 .wcu-card {
-    padding: 30px; /* Increase padding */
+    padding: 30px;
 }
 
 .wcu-section-description {
@@ -211,10 +209,8 @@ button a:visited {
     padding: 10px;
 }
 
-
 .wcu-section-description {
     text-align: center;
-
 }
 
 .wcu-card {
@@ -342,5 +338,44 @@ button a:visited {
     .scroll-btn {
         font-size: 14px;
         padding: 8px;
+    }
+
+    .menu-item-card {
+        padding: 15px;
+    }
+
+    .slider-container {
+        width: 100%; /* Make slider container full width */
+    }
+
+    .slide {
+        flex: 0 0 80%; /* Make each slide take more space on smaller screens */
+        font-size: 18px; /* Adjust font size */
+    }
+
+    .btn {
+        padding: 10px 20px;
+        font-size: 14px;
+    }
+
+    .explore-menu-section {
+        padding: 30px 15px;
+    }
+
+    .footer-section {
+        padding: 20px;
+    }
+
+    .wcu-section-description {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .nav-item {
+        font-size: 14px;
+    }
+
+    .food-munch-logo {
+        width: 50px; /* Adjust logo size for small screens */
     }
 }
